@@ -1,0 +1,45 @@
+{
+  "name": "unusual-chessboard",
+  "version": "0.0.1",
+  "description": "A collection of unusual chess and board games with multiple platforms support",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server",
+    "mobile"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:client": "npm run dev --workspace=client",
+    "dev:server": "npm run dev --workspace=server",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "npm run build --workspace=client",
+    "build:server": "npm run build --workspace=server",
+    "build:mobile": "npm run build --workspace=client && npm run cap:sync --workspace=mobile",
+    "start": "npm run start --workspace=server",
+    "test": "npm run test --workspace=server",
+    "clean": "npm run clean:modules-win && npm run clean:cache",
+    "clean:modules-win": "if exist node_modules rmdir /s /q node_modules && if exist client\\node_modules rmdir /s /q client\\node_modules && if exist server\\node_modules rmdir /s /q server\\node_modules && if exist mobile\\node_modules rmdir /s /q mobile\\node_modules",
+    "clean:modules-unix": "rm -rf node_modules client/node_modules server/node_modules mobile/node_modules",
+    "clean:cache": "npm cache clean --force"
+  },
+  "keywords": [
+    "chess",
+    "board-games",
+    "react",
+    "typescript",
+    "express",
+    "mongodb",
+    "capacitor",
+    "mobile"
+  ],
+  "author": "flintcore Development Department | 燧石核心开发部门",
+  "license": "CC-BY-NC-SA-4.0",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ThatMrBen/UnusualChessboard"
+  }
+}

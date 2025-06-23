@@ -1,0 +1,120 @@
+{
+  "app": {
+    "title": "这个棋盘不一般",
+    "description": "一个支持多平台的非常规国际象棋和棋盘游戏集合",
+    "start": "开始体验"
+  },
+  "app_name": "这个棋盘不一般",
+  "welcome": "欢迎使用这个棋盘不一般",
+  "welcome_message": "一个现代化多平台棋盘游戏集合，包含28种经典棋盘游戏和各种休闲小游戏。",
+  "get_started": "开始体验",
+  "profile": "个人资料",
+  "setting": "设置",
+  "logout": "退出登录",
+  "copyright": "版权所有",
+  "author": "燧石核心开发部门",
+  "nav": {
+    "home": "首页",
+    "games": "游戏",
+    "about": "关于",
+    "settings": "设置"
+  },
+  "games": {
+    "title": "游戏合集",
+    "subtitle": "探索我们的经典和非常规棋盘游戏集合",
+    "available_games": "当前可用游戏",
+    "coming_soon": "即将推出",
+    "categories": {
+      "chess": "棋类游戏",
+      "board": "棋盘游戏",
+      "casual": "休闲游戏"
+    },
+    "chess": {
+      "name": "国际象棋",
+      "description": "在8×8的方格棋盘上进行的经典战略棋盘游戏"
+    },
+    "chinese_chess": {
+      "name": "中国象棋",
+      "description": "在9×10的棋盘上进行的双人战略棋盘游戏"
+    },
+    "shogi": {
+      "name": "日本将棋",
+      "description": "一种类似国际象棋的战略棋盘游戏，但棋子和规则不同"
+    },
+    "makruk": {
+      "name": "泰国象棋",
+      "description": "一种类似国际象棋的棋盘游戏，但棋子走法各有特点"
+    },
+    "go": {
+      "name": "围棋",
+      "description": "一种双人抽象战略棋盘游戏，目标是围占领地"
+    },
+    "gobang": {
+      "name": "五子棋",
+      "description": "一种战略棋盘游戏，玩家目标是连成一行五颗棋子"
+    },
+    "reversi": {
+      "name": "黑白棋（奥赛罗）",
+      "description": "在8×8棋盘上进行的战略棋盘游戏，玩家通过翻转来吃掉对方的棋子"
+    },
+    "checkers": {
+      "name": "国际跳棋",
+      "description": "一种双人战略棋盘游戏，棋子沿对角线移动和吃子"
+    },
+    "sheep": {
+      "name": "羊了个羊",
+      "description": "一款流行的益智游戏，通过消除三个相同图案的方块来通关"
+    },
+    "snake": {
+      "name": "贪吃蛇",
+      "description": "经典游戏，玩家控制一条随着吃食物而变长的蛇"
+    },
+    "jump": {
+      "name": "跳一跳",
+      "description": "休闲游戏，玩家从一个平台跳到另一个平台"
+    },
+    "2048": {
+      "name": "2048",
+      "description": "一款滑动拼图游戏，玩家通过合并数字方块以达到2048"
+    }
+  },
+  "settings": {
+    "language": "语言",
+    "theme": "主题",
+    "sound": "音效",
+    "music": "音乐"
+  },
+  "game_modes": {
+    "player_vs_ai": "玩家对战电脑",
+    "player_vs_player": "玩家对战玩家",
+    "ai_vs_ai": "电脑对战电脑"
+  },
+  "difficulty": {
+    "easy": "简单",
+    "medium": "中等",
+    "hard": "困难"
+  },
+  "user": {
+    "login": "登录",
+    "register": "注册",
+    "forgot_password": "忘记密码",
+    "email": "邮箱",
+    "password": "密码",
+    "confirm_password": "确认密码",
+    "name": "姓名",
+    "avatar": "头像"
+  },
+  "actions": {
+    "save": "保存",
+    "cancel": "取消",
+    "confirm": "确认",
+    "delete": "删除",
+    "edit": "编辑",
+    "play": "开始游戏",
+    "pause": "暂停",
+    "resume": "继续",
+    "restart": "重新开始",
+    "back": "返回",
+    "next": "下一步"
+  }
+} 

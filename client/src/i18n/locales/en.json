@@ -1,0 +1,120 @@
+{
+  "app": {
+    "title": "UnusualChessboard",
+    "description": "A collection of unusual chess and board games with multiple platforms support",
+    "start": "Get Started"
+  },
+  "app_name": "UnusualChessboard",
+  "welcome": "Welcome to UnusualChessboard",
+  "welcome_message": "A modern multi-platform board game collection with 28 classic board games and various casual mini-games.",
+  "get_started": "Get Started",
+  "profile": "Profile",
+  "setting": "Settings",
+  "logout": "Logout",
+  "copyright": "Copyright",
+  "author": "flintcore Development Department",
+  "nav": {
+    "home": "Home",
+    "games": "Games",
+    "about": "About",
+    "settings": "Settings"
+  },
+  "games": {
+    "title": "Games Collection",
+    "subtitle": "Explore our collection of classic and unusual board games",
+    "available_games": "Available Games",
+    "coming_soon": "Coming Soon",
+    "categories": {
+      "chess": "Chess Games",
+      "board": "Board Games",
+      "casual": "Casual Games"
+    },
+    "chess": {
+      "name": "Chess",
+      "description": "The classic strategy board game played on an 8×8 checkered board"
+    },
+    "chinese_chess": {
+      "name": "Chinese Chess (Xiangqi)",
+      "description": "A strategy board game for two players played on a 9×10 board"
+    },
+    "shogi": {
+      "name": "Japanese Chess (Shogi)",
+      "description": "A strategy board game similar to chess, but with different pieces and rules"
+    },
+    "makruk": {
+      "name": "Thai Chess (Makruk)",
+      "description": "A board game similar to chess, but with its own distinct movement of pieces"
+    },
+    "go": {
+      "name": "Go (Weiqi)",
+      "description": "An abstract strategy board game for two players where the aim is to surround territory"
+    },
+    "gobang": {
+      "name": "Gobang (Five in a Row)",
+      "description": "A strategy board game where players aim to create a row of five stones"
+    },
+    "reversi": {
+      "name": "Reversi (Othello)",
+      "description": "A strategy board game played on an 8×8 board where players capture opponent's discs"
+    },
+    "checkers": {
+      "name": "Checkers",
+      "description": "A strategy board game for two players with diagonal moves and captures"
+    },
+    "sheep": {
+      "name": "Sheep a Sheep",
+      "description": "A popular puzzle game where you match three identical pieces to clear them"
+    },
+    "snake": {
+      "name": "Snake",
+      "description": "A classic game where you control a snake that grows longer as it eats food"
+    },
+    "jump": {
+      "name": "Jump Jump",
+      "description": "A casual game where the player jumps from platform to platform"
+    },
+    "2048": {
+      "name": "2048",
+      "description": "A sliding puzzle game where you combine numbered tiles to reach 2048"
+    }
+  },
+  "settings": {
+    "language": "Language",
+    "theme": "Theme",
+    "sound": "Sound",
+    "music": "Music"
+  },
+  "game_modes": {
+    "player_vs_ai": "Player vs AI",
+    "player_vs_player": "Player vs Player",
+    "ai_vs_ai": "AI vs AI"
+  },
+  "difficulty": {
+    "easy": "Easy",
+    "medium": "Medium",
+    "hard": "Hard"
+  },
+  "user": {
+    "login": "Login",
+    "register": "Register",
+    "forgot_password": "Forgot Password",
+    "email": "Email",
+    "password": "Password",
+    "confirm_password": "Confirm Password",
+    "name": "Name",
+    "avatar": "Avatar"
+  },
+  "actions": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "edit": "Edit",
+    "play": "Play",
+    "pause": "Pause",
+    "resume": "Resume",
+    "restart": "Restart",
+    "back": "Back",
+    "next": "Next"
+  }
+} 
