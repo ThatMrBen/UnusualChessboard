@@ -12,7 +12,7 @@
   "setting": "设置",
   "logout": "退出登录",
   "copyright": "版权所有",
-  "author": "燧石核心开发部门",
+  "author": "《这个棋盘不一般》开发团队",
   "nav": {
     "home": "首页",
     "games": "游戏",
@@ -79,8 +79,12 @@
     }
   },
   "settings": {
-    "language": "语言",
+    "setting": "设置",
+    "profile": "个人资料",
+    "account": "账号设置",
     "theme": "主题",
+    "language": "语言",
+    "api": "API设置",
     "sound": "音效",
     "music": "音乐"
   },
@@ -116,5 +120,110 @@
     "restart": "重新开始",
     "back": "返回",
     "next": "下一步"
+  },
+  "game_detail": {
+    "game_options": "游戏选项",
+    "game_mode": "游戏模式",
+    "difficulty": "难度",
+    "game_content_loading": "游戏内容将在这里加载"
+  },
+  "profile_editor": {
+    "nickname": "昵称",
+    "signature": "签名",
+    "default_signature": "这个棋盘不一般！"
+  },
+  "language": {
+    "english": "English",
+    "chinese": "中文"
+  },
+  "api_settings": {
+    "title": "API设置",
+    "description": "（此处可扩展API相关设置）"
+  },
+  "errors": {
+    "game_id_missing": "游戏ID缺失",
+    "game_not_found": "游戏未找到"
+  },
+  "email": {
+    "registration": {
+      "subject": "欢迎注册这个棋盘不一般 - 验证码",
+      "greeting": "您好，",
+      "code_message": "您的注册验证码是：",
+      "expiry_message": "该验证码将在15分钟后过期。",
+      "ignore_message": "如果您没有请求此验证码，请忽略此邮件。",
+      "thanks": "谢谢，",
+      "team": "《这个棋盘不一般》开发团队"
+    },
+    "password-reset": {
+      "subject": "这个棋盘不一般 - 密码重置验证码",
+      "greeting": "您好，",
+      "code_message": "您的密码重置验证码是：",
+      "expiry_message": "该验证码将在15分钟后过期。",
+      "ignore_message": "如果您没有请求此验证码，请忽略此邮件。",
+      "thanks": "谢谢，",
+      "team": "《这个棋盘不一般》开发团队"
+    },
+    "two-factor": {
+      "subject": "这个棋盘不一般 - 两步验证码",
+      "greeting": "您好，",
+      "code_message": "您的两步验证码是：",
+      "expiry_message": "该验证码将在15分钟后过期。",
+      "ignore_message": "如果您没有请求此验证码，请忽略此邮件。",
+      "thanks": "谢谢，",
+      "team": "《这个棋盘不一般》开发团队"
+    },
+    "email-verification": {
+      "subject": "这个棋盘不一般 - 邮箱验证码",
+      "greeting": "您好，",
+      "code_message": "您的邮箱验证码是：",
+      "expiry_message": "该验证码将在15分钟后过期。",
+      "ignore_message": "如果您没有请求此验证码，请忽略此邮件。",
+      "thanks": "谢谢，",
+      "team": "《这个棋盘不一般》开发团队"
+    },
+    "general": {
+      "subject": "这个棋盘不一般 - 验证码",
+      "greeting": "您好，",
+      "code_message": "您的验证码是：",
+      "expiry_message": "该验证码将在15分钟后过期。",
+      "ignore_message": "如果您没有请求此验证码，请忽略此邮件。",
+      "thanks": "谢谢，",
+      "team": "《这个棋盘不一般》开发团队"
+    }
+  },
+  "theme_switcher": "主题切换",
+  "theme_switcher_desc": "选择你喜欢的外观主题。",
+  "account_settings": {
+    "email": "绑定邮箱",
+    "change_email": "更换",
+    "password": "密码",
+    "change_password": "修改密码"
+  },
+  "about": {
+    "project_intro": "项目旨在提供各种经典和非传统的棋类游戏，支持Web、移动和桌面平台，为棋类游戏爱好者提供丰富的游戏体验。",
+    "features_title": "项目特点",
+    "features": [
+      "多种棋类和棋盘游戏，包括国际象棋、中国象棋、围棋等",
+      "支持Web、移动和桌面多平台",
+      "支持多种界面主题和多语言",
+      "AI对战和在线多人对战功能",
+      "游戏记录和回放功能"
+    ],
+    "tech_title": "技术栈",
+    "techs": [
+      "前端：React、TypeScript、TailwindCSS",
+      "移动端：Capacitor",
+      "后端：Node.js、Express",
+      "数据库：MongoDB"
+    ],
+    "team_title": "团队信息",
+    "team_info": "本项目由《这个棋盘不一般》开发团队开发。",
+    "github": "GitHub仓库：",
+    "license_title": "许可协议",
+    "license": "本项目采用知识共享署名-非商业性-相同方式共享 4.0 国际许可协议（CC BY-NC-SA 4.0）。"
+  },
+  "home": {
+    "title": "这个棋盘不一般",
+    "subtitle": "一个支持多平台的非常规国际象棋和棋盘游戏集合"
   }
 } 

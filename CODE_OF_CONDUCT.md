@@ -51,7 +51,7 @@ This Code of Conduct is adapted from the [Contributor Covenant](https://www.cont
 ### Project Information
 
 - **Project Name**: UnusualChessboard | 这个棋盘不一般
-- **Maintainers**: flintcore Development Department | 燧石核心开发部门
+- **Maintainers**: *UnusualChessboard* Development Group
 - **Repository**: https://github.com/ThatMrBen/UnusualChessboard
 - **Copyright**: © 2025
 
@@ -104,6 +104,6 @@ This Code of Conduct is adapted from the [Contributor Covenant](https://www.cont
 ### 项目信息
 
 - **项目名称**: UnusualChessboard | 这个棋盘不一般
-- **维护者**: flintcore Development Department | 燧石核心开发部门
+- **维护者**: *UnusualChessboard* Development Group
 - **代码仓库**: https://github.com/ThatMrBen/UnusualChessboard
 - **版权**: © 2025 

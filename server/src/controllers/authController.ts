@@ -4,6 +4,7 @@ import VerificationCode from '../models/VerificationCode';
 import jwt from 'jsonwebtoken';
 import nodemailer from 'nodemailer';
 import crypto from 'crypto';
+import { generateBilingualEmail } from '../utils/i18n';
 
 // 这个文件包含与用户认证相关的所有控制器函数
 // 包括注册、登录、验证码发送、密码重置等功能
@@ -29,36 +30,14 @@ const sendVerificationEmail = async (email: string, code: string, type: string):
     },
   });
 
-  let subject = '';
-  let text = '';
-
-  switch (type) {
-    case 'registration':
-      subject = '欢迎注册这个棋盘不一般 - 验证码';
-      text = `您好，\n\n您的注册验证码是：${code}\n\n该验证码将在15分钟后过期。\n\n如果您没有请求此验证码，请忽略此邮件。\n\n谢谢，\n这个棋盘不一般团队`;
-      break;
-    case 'password-reset':
-      subject = '这个棋盘不一般 - 密码重置验证码';
-      text = `您好，\n\n您的密码重置验证码是：${code}\n\n该验证码将在15分钟后过期。\n\n如果您没有请求此验证码，请忽略此邮件。\n\n谢谢，\n这个棋盘不一般团队`;
-      break;
-    case 'two-factor':
-      subject = '这个棋盘不一般 - 两步验证码';
-      text = `您好，\n\n您的两步验证码是：${code}\n\n该验证码将在15分钟后过期。\n\n如果您没有请求此验证码，请忽略此邮件。\n\n谢谢，\n这个棋盘不一般团队`;
-      break;
-    case 'email-verification':
-      subject = '这个棋盘不一般 - 邮箱验证码';
-      text = `您好，\n\n您的邮箱验证码是：${code}\n\n该验证码将在15分钟后过期。\n\n如果您没有请求此验证码，请忽略此邮件。\n\n谢谢，\n这个棋盘不一般团队`;
-      break;
-    default:
-      subject = '这个棋盘不一般 - 验证码';
-      text = `您好，\n\n您的验证码是：${code}\n\n该验证码将在15分钟后过期。\n\n如果您没有请求此验证码，请忽略此邮件。\n\n谢谢，\n这个棋盘不一般团队`;
-  }
+  // 使用i18n工具函数生成双语邮件内容
+  const emailContent = generateBilingualEmail(type as any, code);
 
   await transporter.sendMail({
-    from: `"这个棋盘不一般" <${process.env.EMAIL_USER || 'noreply@unusualchessboard.com'}>`,
+    from: emailContent.from,
     to: email,
-    subject,
-    text,
+    subject: emailContent.subject,
+    text: emailContent.text,
   });
 };
 

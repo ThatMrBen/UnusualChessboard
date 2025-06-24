@@ -157,6 +157,7 @@ export const getCategories = (): { id: Game['category']; nameKey: string }[] => 
   ];
 };
 
+// 导出所有服务方法
 export default {
   getAllGames,
   getGamesByCategory,

@@ -7,10 +7,13 @@ import gameService, { Game } from '../services/gameService';
  * 游戏详情页面
  * 加载和展示特定游戏
  */
+// GameDetailPage 组件，负责渲染单个游戏的详细信息
 const GameDetailPage: React.FC = () => {
+  // 获取路由参数中的gameId
   const { gameId } = useParams<{ gameId: string }>();
   const navigate = useNavigate();
   const { t } = useTranslation();
+  // 游戏信息、加载状态、错误信息
   const [game, setGame] = useState<Game | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -21,7 +24,7 @@ const GameDetailPage: React.FC = () => {
     setError(null);
 
     if (!gameId) {
-      setError('Game ID is missing');
+      setError(t('errors.game_id_missing'));
       setLoading(false);
       return;
     }
@@ -30,11 +33,11 @@ const GameDetailPage: React.FC = () => {
     if (gameInfo) {
       setGame(gameInfo);
     } else {
-      setError(`Game with ID "${gameId}" not found`);
+      setError(t('errors.game_not_found'));
     }
 
     setLoading(false);
-  }, [gameId]);
+  }, [gameId, t]);
 
   // 返回上一页
   const handleBack = () => {
@@ -52,7 +55,7 @@ const GameDetailPage: React.FC = () => {
   if (error || !game) {
     return (
       <div className="min-h-[500px] flex flex-col items-center justify-center">
-        <h2 className="text-2xl font-bold text-error mb-4">{error || 'Game not found'}</h2>
+        <h2 className="text-2xl font-bold text-error mb-4">{error || t('errors.game_not_found')}</h2>
         <button className="btn btn-primary" onClick={handleBack}>
           {t('actions.back')}
         </button>
@@ -87,6 +90,7 @@ const GameDetailPage: React.FC = () => {
         {/* 游戏信息区域 */}
         <div className="lg:col-span-1">
           <div className="card bg-base-200 shadow-xl">
+            {/* 游戏图片 */}
             {game.image && (
               <figure>
                 <img src={game.image} alt={t(game.nameKey)} className="w-full h-64 object-cover" />
@@ -104,12 +108,12 @@ const GameDetailPage: React.FC = () => {
           {/* 游戏选项区域 */}
           <div className="mt-6 card bg-base-200 shadow-xl">
             <div className="card-body">
-              <h3 className="text-xl font-bold mb-4">游戏选项</h3>
+              <h3 className="text-xl font-bold mb-4">{t('game_detail.game_options')}</h3>
               
               {/* 游戏模式选择 */}
               <div className="form-control mb-4">
                 <label className="label">
-                  <span className="label-text">游戏模式</span>
+                  <span className="label-text">{t('game_detail.game_mode')}</span>
                 </label>
                 <select className="select select-bordered w-full">
                   <option value="player_vs_ai">{t('game_modes.player_vs_ai')}</option>
@@ -121,7 +125,7 @@ const GameDetailPage: React.FC = () => {
               {/* 难度选择 */}
               <div className="form-control mb-4">
                 <label className="label">
-                  <span className="label-text">难度</span>
+                  <span className="label-text">{t('game_detail.difficulty')}</span>
                 </label>
                 <select className="select select-bordered w-full">
                   <option value="easy">{t('difficulty.easy')}</option>
@@ -141,7 +145,7 @@ const GameDetailPage: React.FC = () => {
         <div className="lg:col-span-2">
           <div className="card bg-base-200 shadow-xl min-h-[600px] flex items-center justify-center">
             {/* 游戏内容将在这里加载 */}
-            <p className="text-xl">游戏内容将在这里加载</p>
+            <p className="text-xl">{t('game_detail.game_content_loading')}</p>
           </div>
         </div>
       </div>

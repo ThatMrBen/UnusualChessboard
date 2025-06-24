@@ -1,12 +1,30 @@
 import { createBrowserRouter } from 'react-router-dom';
+import { lazy, Suspense } from 'react';
 import MainLayout from '../layouts/MainLayout';
-import HomePage from '../pages/HomePage';
-import GamesPage from '../pages/GamesPage';
-import AboutPage from '../pages/AboutPage';
-import GameDetailPage from '../pages/GameDetailPage';
+
+// 懒加载组件
+const HomePage = lazy(() => import('../pages/HomePage'));
+const GamesPage = lazy(() => import('../pages/GamesPage'));
+const GameDetailPage = lazy(() => import('../pages/GameDetailPage'));
+const SettingsPage = lazy(() => import('../pages/SettingsPage'));
+
+// 加载组件
+const LoadingSpinner = () => (
+  <div className="flex items-center justify-center min-h-screen">
+    <div className="loading loading-spinner loading-lg"></div>
+  </div>
+);
+
+// 页面包装器，提供懒加载支持
+const PageWrapper = ({ children }: { children: React.ReactNode }) => (
+  <Suspense fallback={<LoadingSpinner />}>
+    {children}
+  </Suspense>
+);
 
 /**
  * 应用路由配置
+ * 使用懒加载优化性能
  */
 const router = createBrowserRouter([
   {
@@ -15,19 +33,35 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <HomePage />
+        element: (
+          <PageWrapper>
+            <HomePage />
+          </PageWrapper>
+        )
       },
       {
         path: 'games',
-        element: <GamesPage />
+        element: (
+          <PageWrapper>
+            <GamesPage />
+          </PageWrapper>
+        )
       },
       {
         path: 'games/:gameId',
-        element: <GameDetailPage />
+        element: (
+          <PageWrapper>
+            <GameDetailPage />
+          </PageWrapper>
+        )
       },
       {
-        path: 'about',
-        element: <AboutPage />
+        path: 'settings',
+        element: (
+          <PageWrapper>
+            <SettingsPage />
+          </PageWrapper>
+        )
       }
     ]
   }

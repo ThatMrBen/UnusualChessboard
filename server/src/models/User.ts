@@ -10,6 +10,7 @@ export interface IUser extends Document {
   additionalEmails: string[];
   password: string;
   avatar?: string;
+  signature?: string;
   role: 'user' | 'admin';
   gameData: {
     growthScore: number;
@@ -63,6 +64,11 @@ const userSchema = new Schema<IUser>(
     avatar: {
       type: String,
       default: '',
+    },
+    signature: {
+      type: String,
+      default: '',
+      maxlength: [100, 'Signature cannot be more than 100 characters'],
     },
     role: {
       type: String,

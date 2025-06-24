@@ -9,7 +9,7 @@ Thank you for your interest in contributing to UnusualChessboard! This document 
 ### Project Information
 
 - **Project Name**: UnusualChessboard | 这个棋盘不一般
-- **Maintainers**: flintcore Development Department | 燧石核心开发部门
+- **Maintainers**: *UnusualChessboard* Development Group | 《这个棋盘不一般》开发团队
 - **Repository**: https://github.com/ThatMrBen/UnusualChessboard
 - **Copyright**: © 2025
 
@@ -205,7 +205,7 @@ UnusualChessboard/
 
 ### License
 
-By contributing to UnusualChessboard, you agree that your contributions will be licensed under the project's [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/) and attributed to flintcore Development Department | 燧石核心开发部门.
+By contributing to UnusualChessboard, you agree that your contributions will be licensed under the project's [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/) and attributed to *UnusualChessboard* Development Group | 《这个棋盘不一般》开发团队.
 
 ## 中文
 
@@ -214,7 +214,7 @@ By contributing to UnusualChessboard, you agree that your contributions will be 
 ### 项目信息
 
 - **项目名称**: UnusualChessboard | 这个棋盘不一般
-- **维护者**: flintcore Development Department | 燧石核心开发部门
+- **维护者**: *UnusualChessboard* Development Group | 《这个棋盘不一般》开发团队
 - **代码仓库**: https://github.com/ThatMrBen/UnusualChessboard
 - **版权**: © 2025
 
@@ -410,4 +410,4 @@ UnusualChessboard/
 
 ### 许可证
 
-通过向《这个棋盘不一般》贡献，您同意您的贡献将根据项目的[知识共享署名-非商业性-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans)进行许可，并归属于燧石核心开发部门。
+通过向《这个棋盘不一般》贡献，您同意您的贡献将根据项目的[知识共享署名-非商业性-相同方式共享 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans)进行许可，并归属于*UnusualChessboard* Development Group | 《这个棋盘不一般》开发团队。

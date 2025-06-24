@@ -12,7 +12,7 @@
   "setting": "Settings",
   "logout": "Logout",
   "copyright": "Copyright",
-  "author": "flintcore Development Department",
+  "author": "*UnusualChessboard* Development Group",
   "nav": {
     "home": "Home",
     "games": "Games",
@@ -79,8 +79,12 @@
     }
   },
   "settings": {
-    "language": "Language",
+    "setting": "Settings",
+    "profile": "Profile",
+    "account": "Account",
     "theme": "Theme",
+    "language": "Language",
+    "api": "API Settings",
     "sound": "Sound",
     "music": "Music"
   },
@@ -116,5 +120,110 @@
     "restart": "Restart",
     "back": "Back",
     "next": "Next"
+  },
+  "game_detail": {
+    "game_options": "Game Options",
+    "game_mode": "Game Mode",
+    "difficulty": "Difficulty",
+    "game_content_loading": "Game content will be loaded here"
+  },
+  "profile_editor": {
+    "nickname": "Nickname",
+    "signature": "Signature",
+    "default_signature": "UnusualChessboard!"
+  },
+  "language": {
+    "english": "English",
+    "chinese": "中文"
+  },
+  "account_settings": {
+    "email": "Bound Email",
+    "change_email": "Change",
+    "password": "Password",
+    "change_password": "Change Password"
+  },
+  "api_settings": {
+    "title": "API Settings",
+    "description": "(API related settings can be extended here)"
+  },
+  "errors": {
+    "game_id_missing": "Game ID is missing",
+    "game_not_found": "Game not found"
+  },
+  "email": {
+    "registration": {
+      "subject": "Welcome to UnusualChessboard - Verification Code",
+      "greeting": "Hello,",
+      "code_message": "Your registration verification code is:",
+      "expiry_message": "This verification code will expire in 15 minutes.",
+      "ignore_message": "If you did not request this verification code, please ignore this email.",
+      "thanks": "Thank you,",
+      "team": "*UnusualChessboard* Development Group"
+    },
+    "password-reset": {
+      "subject": "UnusualChessboard - Password Reset Verification Code",
+      "greeting": "Hello,",
+      "code_message": "Your password reset verification code is:",
+      "expiry_message": "This verification code will expire in 15 minutes.",
+      "ignore_message": "If you did not request this verification code, please ignore this email.",
+      "thanks": "Thank you,",
+      "team": "*UnusualChessboard* Development Group"
+    },
+    "two-factor": {
+      "subject": "UnusualChessboard - Two-Factor Authentication Code",
+      "greeting": "Hello,",
+      "code_message": "Your two-factor authentication code is:",
+      "expiry_message": "This verification code will expire in 15 minutes.",
+      "ignore_message": "If you did not request this verification code, please ignore this email.",
+      "thanks": "Thank you,",
+      "team": "*UnusualChessboard* Development Group"
+    },
+    "email-verification": {
+      "subject": "UnusualChessboard - Email Verification Code",
+      "greeting": "Hello,",
+      "code_message": "Your email verification code is:",
+      "expiry_message": "This verification code will expire in 15 minutes.",
+      "ignore_message": "If you did not request this verification code, please ignore this email.",
+      "thanks": "Thank you,",
+      "team": "*UnusualChessboard* Development Group"
+    },
+    "general": {
+      "subject": "UnusualChessboard - Verification Code",
+      "greeting": "Hello,",
+      "code_message": "Your verification code is:",
+      "expiry_message": "This verification code will expire in 15 minutes.",
+      "ignore_message": "If you did not request this verification code, please ignore this email.",
+      "thanks": "Thank you,",
+      "team": "*UnusualChessboard* Development Group"
+    }
+  },
+  "theme_switcher": "Theme Switcher",
+  "theme_switcher_desc": "Select your preferred appearance theme.",
+  "about": {
+    "project_intro": "The project aims to provide a variety of classic and non-traditional chess games, supporting Web, mobile, and desktop platforms, offering a rich gaming experience for chess enthusiasts.",
+    "features_title": "Features",
+    "features": [
+      "Multiple chess and board games, including chess, Chinese chess, Go, etc.",
+      "Supports Web, mobile, and desktop platforms",
+      "Multiple UI themes and languages",
+      "AI and online multiplayer support",
+      "Game record and replay functions"
+    ],
+    "tech_title": "Tech Stack",
+    "techs": [
+      "Frontend: React, TypeScript, TailwindCSS",
+      "Mobile: Capacitor",
+      "Backend: Node.js, Express",
+      "Database: MongoDB"
+    ],
+    "team_title": "Team Info",
+    "team_info": "This project is developed by the UnusualChessboard Development Group.",
+    "github": "GitHub:",
+    "license_title": "License",
+    "license": "This project is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0)."
+  },
+  "home": {
+    "title": "UnusualChessboard",
+    "subtitle": "A multi-platform collection of unconventional chess and board games."
   }
 } 

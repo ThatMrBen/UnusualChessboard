@@ -1,6 +1,7 @@
 import express from 'express';
 import authRoutes from './authRoutes';
 import gameDataRoutes from './gameDataRoutes';
+import userRoutes from './userRoutes';
 
 const router = express.Router();
 
@@ -16,5 +17,6 @@ router.get('/version', (_req: express.Request, res: express.Response) => {
 
 router.use('/auth', authRoutes);
 router.use('/game-data', gameDataRoutes);
+router.use('/users', userRoutes);
 
 export default router; 
